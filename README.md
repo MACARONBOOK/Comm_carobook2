@@ -22,3 +22,20 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# Comm_carobooks<br>
+ create group_function on them.
+ 
+ * create controller(groups)<br>
+ 
+ * create 2model (group / group_user)<br>
+ 
+ * association with 3model(user - group_user<stock table> - group)<br>
+ 
+ * add routing<br>
+ 
+ * add link on users/index<br>
+ 
+ * write views<br>
+ 
+ 
