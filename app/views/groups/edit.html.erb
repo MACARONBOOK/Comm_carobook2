@@ -1,0 +1,28 @@
+<div class='container'>
+  <div class='row'>
+    <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
+      <h2>Editing Group</h2>
+      <%= render 'layouts/errors', obj: @group %>
+
+      <%= form_with model: group, local: true do |f| %>
+        <div class="form-group">
+          <label for="group_name">Group name</label>
+          <%= f.text_field :name, class: 'form-control' %>
+        </div>
+
+        <div class="form-group">
+          <label for="group_introduction">Introduction</label>
+          <%= f.text_area :introduction, class: 'form-control' %>
+        </div>
+
+        <div class="form-group">
+          <label for="group_image">Group image</label>
+          <%= f.attachment_field :image, class: "form-control-file" %>
+        </div>
+
+        <div class="form-group">
+          <%= f.submit "Create group", class: 'btn btn-secondary bg-info text-white' %>
+        </div>
+      <% end %>
+  </div>
+</div>
