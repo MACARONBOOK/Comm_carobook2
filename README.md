@@ -38,4 +38,10 @@ Things you may want to cover:
  
  * write views<br>
  
+ * edit migration-file<br>
+   rails db:migrate:status → check up and down(is there saved?)<br>
+   rails db:rollback STEP=2 → this case rollback recent-2file.<br>
+   edit existing-file<br>
+   rails db:migrate → can all migrate by one-action
  
+ * add action(join/update/destroy) on groupCon
