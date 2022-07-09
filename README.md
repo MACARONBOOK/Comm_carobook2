@@ -72,7 +72,6 @@ Things you may want to cover:
     def new_mail<br>
     @group = Group.find(params[:group_id])<br>
   end<br>
-
   def send_mail<br>
     @group = Group.find(params[:group_id])<br>
     group_users = @group.users<br>
