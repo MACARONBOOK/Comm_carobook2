@@ -4,7 +4,7 @@
       <h2>Editing Group</h2>
       <%= render 'layouts/errors', obj: @group %>
 
-      <%= form_with model: group, local: true do |f| %>
+      <%= form_with model: @group, local: true do |f| %>
         <div class="form-group">
           <label for="group_name">Group name</label>
           <%= f.text_field :name, class: 'form-control' %>
@@ -17,7 +17,7 @@
 
         <div class="form-group">
           <label for="group_image">Group image</label>
-          <%= f.attachment_field :image, class: "form-control-file" %>
+          <%= f.file_field :image, class: "form-control-file", accept: 'image/*'%>
         </div>
 
         <div class="form-group">
